@@ -58,3 +58,8 @@ vim.opt.completeopt = "menuone,noselect"        -- completion options
 -- Set leader key (without any keymaps)
 vim.g.mapleader = " "                           -- set space as leader key
 vim.g.maplocalleader = " "                      -- local leader key
+
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevelstart = 99 -- load buffers with folds open
