@@ -1,5 +1,6 @@
 return   {
     "domharries/foldnav.nvim",
+    event = "VeryLazy",
     version = "*",
     config = function()
       vim.g.foldnav = {
@@ -15,4 +16,4 @@ return   {
       -- { "<C-k>", function() require("foldnav").goto_prev_end() end },
       { "<C-l>", function() require("foldnav").goto_end() end },
     },
-  }
+}
